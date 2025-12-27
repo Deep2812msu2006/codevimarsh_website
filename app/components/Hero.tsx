@@ -77,7 +77,8 @@ export default function Hero() {
                 </span>
               </p>
               <p className="text-cyan-300 text-lg md:text-xl max-w-2xl leading-relaxed">
-                >_ Empowering developers through innovation and collaboration
+                {'>'}_ Empowering developers through innovation and collaboration
+
               </p>
             </div>
             
