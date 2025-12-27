@@ -9,6 +9,14 @@ export default function Hero() {
   const fullText = '> INITIALIZING CODE VIMARSH...';
   const [cursorVisible, setCursorVisible] = useState(true);
 
+  const teamMembers = [
+    { name: 'Krupal Patel', image: '/Krupal_patel.jpeg' },
+    { name: 'Mihir Bhavasar', image: '/Mihir_bhavasar.jpeg' },
+    { name: 'Shivam Parmar', image: '/Shivam_parmar.jpeg' },
+    { name: 'Yesh Solanki', image: '/Yesh_solnki.jpeg' },
+    { name: 'Jay Prajapati', image: '/jay_prajapati.jpeg' }
+  ];
+
   useEffect(() => {
     // Typing effect
     let currentIndex = 0;
@@ -34,7 +42,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative min-h-screen flex flex-col items-center justify-between overflow-hidden bg-black">
       {/* Grid background */}
       <div className="absolute inset-0 z-0 opacity-30">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]">
@@ -48,7 +56,7 @@ export default function Hero() {
       )}
 
       {/* Main content */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 py-20">
         <div className="terminal-window border border-cyan-400/30 bg-black/80 backdrop-blur-sm p-6 md:p-8 rounded-lg shadow-2xl shadow-cyan-500/10">
           {/* Terminal header */}
           <div className="flex items-center space-x-2 mb-6">
