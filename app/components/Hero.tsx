@@ -10,11 +10,11 @@ export default function Hero() {
   const [cursorVisible, setCursorVisible] = useState(true);
 
   const teamMembers = [
-    { name: 'Krupal Patel', image: '/Krupal_patel.jpeg' },
-    { name: 'Mihir Bhavasar', image: '/Mihir_bhavasar.jpeg' },
-    { name: 'Shivam Parmar', image: '/Shivam_parmar.jpeg' },
-    { name: 'Yesh Solanki', image: '/Yesh_solnki.jpeg' },
-    { name: 'Jay Prajapati', image: '/jay_prajapati.jpeg' }
+    { name: 'Krupal Patel', image: '/images/team/Krupal_ patel.jpeg' },
+    { name: 'Mihir Bhavasar', image: '/images/team/Mihir_bhavasar.jpeg' },
+    { name: 'Shivam Parmar', image: '/images/team/Shivam_parmar.jpeg' },
+    { name: 'Yesh Solanki', image: '/images/team/Yesh_solnki.jpeg' },
+    { name: 'Jay Prajapati', image: '/images/team/jay_prajapati.jpeg' }
   ];
 
   useEffect(() => {
