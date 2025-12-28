@@ -9,14 +9,6 @@ export default function Hero() {
   const fullText = '> INITIALIZING CODE VIMARSH...';
   const [cursorVisible, setCursorVisible] = useState(true);
 
-  const teamMembers = [
-    { name: 'Krupal Patel', image: '/images/team/Krupal_ patel.jpeg' },
-    { name: 'Mihir Bhavasar', image: '/images/team/Mihir_bhavasar.jpeg' },
-    { name: 'Shivam Parmar', image: '/images/team/Shivam_parmar.jpeg' },
-    { name: 'Yesh Solanki', image: '/images/team/Yesh_solnki.jpeg' },
-    { name: 'Jay Prajapati', image: '/images/team/jay_prajapati.jpeg' }
-  ];
-
   useEffect(() => {
     // Typing effect
     let currentIndex = 0;
@@ -86,11 +78,10 @@ export default function Hero() {
               </p>
               <p className="text-cyan-300 text-lg md:text-xl max-w-2xl leading-relaxed">
                 {'>'}_ Empowering developers through innovation and collaboration
-
               </p>
             </div>
-            
-            <div className="pt-6 mt-8 border-t border-cyan-400/20">
+
+            <div className="pt-6 mt-8">
               <div className="flex flex-wrap gap-4">
                 <motion.a 
                   href="#about"
@@ -98,15 +89,9 @@ export default function Hero() {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <span className="relative z-10 flex items-center">
-                    <span>EXPLORE</span>
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </span>
-                  <span className="absolute inset-0 bg-cyan-400/5 group-hover:bg-cyan-400/10 transition-colors"></span>
+                  <span className="relative z-10">ABOUT ME</span>
                 </motion.a>
-                
+
                 <motion.a 
                   href="#contact"
                   className="relative px-6 py-3 text-sm font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 group"

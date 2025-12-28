@@ -7,27 +7,33 @@ import RegistrationForm from './RegistrationForm';
 const teamMembers = [
   {
     id: 1,
-    name: 'John Doe',
-    role: 'Founder & Lead',
-    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop&crop=faces',
+    name: 'Jay Prajapati',
+    role: 'Secretary',
+    image: '/images/team/jayprajapati.jpeg',
   },
   {
     id: 2,
-    name: 'Jane Smith',
-    role: 'Tech Lead',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces',
+    name: 'Krupal Patel',
+    role: 'President',
+    image: '/images/team/krupalpatel.jpeg',
   },
   {
     id: 3,
-    name: 'Alex Johnson',
-    role: 'Community Manager',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=faces',
+    name: 'Mihir Bhavsar',
+    role: 'Graphic Designer',
+    image: '/images/team/mihirbhavsar.jpeg',
   },
   {
     id: 4,
-    name: 'Sarah Williams',
-    role: 'Event Coordinator',
-    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=200&fit=crop&crop=faces',
+    name: 'Shivam Parmar,',
+    role: 'Committee Member',
+    image: '/images/team/shivamparmar.jpeg',
+  },
+  {
+    id: 5,
+    name: 'Yesh Solanki,',
+    role: 'Committee Member',
+    image: '/images/team/yeshsolnki.jpeg',
   },
 ];
 
@@ -51,7 +57,7 @@ export default function Team() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto gap-6">
           {teamMembers.map((member) => (
             <div 
               key={member.id} 
